@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(147, 191, 154);
+    background-color: rgba(147, 191, 154, 0.75);
     font-family: 'Crimson Text', serif;
     color: white;
     text-align: center;
@@ -13,12 +13,17 @@ body {
 h1 {
     font-size: 350%;
     margin: 0 auto;
+    padding: 0px;
+}
 
+nav {
+    margin: 10px auto;
 }
 
 a { 
     text-decoration: none;
     color: black;
+    padding: 5px;
 }
 
 img {
@@ -26,4 +31,12 @@ img {
     border-radius: 200px;
     border: solid 1px black;
     padding: 10px;
+    margin: 10px;
+}
+
+article img {
+    width: 400px;
+    border: solid 1px black;
+    padding: 10px;
+    border-radius: 0;
 }
