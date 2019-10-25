@@ -1,42 +1,73 @@
 body {
-    background-color: rgba(147, 191, 154, 0.75);
-    font-family: 'Crimson Text', serif;
-    color: white;
-    text-align: center;
-    padding: 0;
-    max-width: 800px;
-    border: solid 1px black;
-    padding: 10px;
-    margin: 10px auto;
+	background-color: white;
+	font-family: 'Crimson Text', serif;
+	color: black;
+	text-align: center;
+	padding: 0;
+	max-width: 800px;
+	border: solid 1px black;
+	padding: 10px;
+	margin: 10px auto;
+}
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 10px 0;
+}
+
+header img {
+	width: 125px;
 }
 
 h1 {
-    font-size: 350%;
-    margin: 0 auto;
-    padding: 0px;
+	font-size: 350%;
+	padding: 0px;
 }
 
 nav {
-    margin: 10px auto;
+	margin: 20px auto;
+	border-top: 1px solid black;
+	padding-top: 10px;
 }
 
-a { 
-    text-decoration: none;
-    color: black;
-    padding: 5px;
+nav a {
+	padding: 5px;
+	text-decoration: none;
+}
+
+a {
+	color: black;
 }
 
 img {
-    width: 200px;
-    border-radius: 200px;
-    border: solid 1px black;
-    padding: 10px;
-    margin: 10px;
+	width: 200px;
+	border-radius: 200px;
+	border: solid 1px black;
+	padding: 10px;
+	margin: 10px;
 }
 
 article img {
-    width: 400px;
-    border: solid 1px black;
-    padding: 10px;
-    border-radius: 0;
+	width: 400px;
+	border: solid 1px black;
+	padding: 10px;
+	border-radius: 0;
+}
+
+main div {
+	width: 80%;
+	margin: 50px auto;
+	padding: 40px 15px;
+	font-size: 1.5em;
+	border: 1px solid black;
+}
+
+article {
+	width: 80%;
+	margin: 25px auto;
+	padding: 40px 15px;
+	font-size: 1.5em;
+	border-bottom: 1px solid black;
 }
