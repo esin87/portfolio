@@ -2,29 +2,49 @@ body {
 	background-color: white;
 	font-family: 'Crimson Text', serif;
 	color: black;
-	text-align: center;
+	text-align: left;
 	padding: 0;
 	max-width: 800px;
-	border: solid 1px black;
-	padding: 10px;
-	margin: 10px auto;
+	padding: 0px;
+	margin: 0px auto;
 }
 
-header {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin: 10px 0;
-	cursor: pointer;
-}
-
-header img {
+/* header img {
+	object-fit: cover;
 	width: 125px;
-}
+	height: 125px;
+} */
 
 h1 {
-	font-size: 350%;
-	padding: 0px;
+	font-size: 250%;
+}
+
+h2 {
+	font-weight: 300;
+}
+
+h1,
+h2 {
+	margin: 0;
+}
+.home {
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+}
+
+.home img {
+	border: none;
+	border-radius: 0px;
+	width: 100%;
+}
+
+.icon-container {
+	display: flex;
+	flex-direction: row;
+	padding: 0;
+	margin: 0;
+	justify-content: left;
 }
 
 nav {
@@ -57,13 +77,21 @@ article img {
 	border-radius: 0;
 }
 
-main div {
+main {
+	background-color: #f200ff;
+	padding: 0 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+/* main div {
 	width: 80%;
 	margin: 50px auto;
 	padding: 40px 15px;
 	font-size: 1.5em;
 	border: 1px solid black;
-}
+} */
 
 article {
 	width: 80%;
@@ -71,4 +99,12 @@ article {
 	padding: 40px 15px;
 	font-size: 1.5em;
 	border-bottom: 1px solid black;
+}
+
+.icon-container {
+	border: none;
+}
+
+img.icon {
+	width: 25px;
 }
