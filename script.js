@@ -1,14 +1,3 @@
-//profile picture switcheroo
-let esin = document.getElementById('esin-picture');
-
-esin.addEventListener('mouseover', () => {
-	if (esin.getAttribute('src') == 'images/esinbw2.jpeg') {
-		esin.setAttribute('src', 'images/esin_bookshelf.jpg');
-	} else {
-		esin.setAttribute('src', 'images/esinbw2.jpeg');
-	}
-});
-
 //social icon hijinks
 let linkedin = document.getElementById('linkedin');
 let github = document.getElementById('github');
