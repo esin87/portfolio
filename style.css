@@ -37,7 +37,6 @@ h2 {
 
 .home img {
 	border: none;
-	border-radius: 0px;
 	height: 75%;
 }
 
@@ -99,5 +98,30 @@ img.icon:hover {
 	}
 	to {
 		transform: rotate(360deg);
+	}
+}
+
+@media (max-width: 750px) {
+	html,
+	body {
+		margin: 0;
+		padding: 0;
+		height: 100vh;
+		min-height: 100%;
+		position: fixed;
+	}
+
+	.home img {
+		height: 200px;
+	}
+
+	main {
+		height: 100vh;
+		min-height: 100%;
+	}
+
+	img.icon {
+		width: 25px;
+		height: 25px;
 	}
 }
