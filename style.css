@@ -84,7 +84,7 @@ p a {
 p a:hover {
 	background-color: white;
 }
-
+/* 
 img.icon:hover {
 	animation-name: spin;
 	animation-duration: 800ms;
@@ -99,7 +99,7 @@ img.icon:hover {
 	to {
 		transform: rotate(360deg);
 	}
-}
+} */
 
 @media (max-width: 750px) {
 	html,
