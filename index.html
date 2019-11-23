@@ -43,39 +43,23 @@
 					alt="Esin in front of her bookshelf."
 				/>
 			</div>
-			<main>
+			<main id="yellow-rectangle">
 				<h2>hello, friend!</h2>
 				<h1>I'm Esin</h1>
 				<p>
 					I'm a software engineer who loves using code to solve
-					problems, whether that means building applications that help
-					people tell their
-					<a
-						href="https://esin87.github.io/travelogue/"
-						target="_blank"
-						>travel stories</a
-					>, helping to make the Internet
-					<a
-						href="https://esins-cheerup-app.herokuapp.com/cheerups/"
-						target="_blank"
-						>a better place,</a
-					>
-					bringing together my love for science fiction and
-					<a
-						href="https://esin87.github.io/StarTrek_TNG_Trivia_Game/"
-						target="_blank"
-						>trivia</a
-					>, or solving coding
+					problems. See some of my projects
+					<a href="#projects">here!</a>
+				</p>
+
+				<p>
+					When I'm not building applications, I like to read, play
+					piano, bake (no soggy bottoms), and solve coding
 					<a
 						href="https://www.codewars.com/users/esin87"
 						target="_blank"
 						>challenges</a
 					>.
-				</p>
-
-				<p>
-					When I'm not coding, I like to read, play piano, and bake
-					(no soggy bottoms).
 				</p>
 
 				<div class="icon-container">
@@ -128,6 +112,179 @@
 				</div>
 			</main>
 		</div>
+		<div class="projects" id="projects">
+			<h2>projects!</h2>
+			<article>
+				<div class="project-img-container">
+					<img
+						src="images/travelogue_home.png"
+						alt="User home page for Travelogue."
+					/>
+					<img
+						src="images/User_Home.png"
+						alt="Wireframe of user home page for Travelogue."
+					/>
+				</div>
+				<div class="project-text-container">
+					<h1>Travelogue</h1>
+
+					<p>
+						Travelogue is a travel diary application that allows
+						users to document their journeys. Registered users have
+						full CRUD functionality on their entries.
+					</p>
+					<p>
+						I built Travelogue's backend using a Django REST
+						Framework and PostgreSQL database, and deployed via
+						Heroku (the web dyno will need a moment to wake up).
+					</p>
+					<p>
+						I chose the React.js framework to build the frontend
+						because of its dynamic client-side component rendering.
+					</p>
+					<p>
+						I planned out the application's major page views using
+						Balsamiq, as seen in the wireframe to the to lower left.
+					</p>
+					<div class="projects-button-container">
+						<a
+							href="https://github.com/esin87/travelogue_backend"
+							target="_blank"
+							>Repo</a
+						>
+						<a
+							href="https://esin87.github.io/travelogue/"
+							target="_blank"
+							>Project</a
+						>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="project-text-container">
+					<h1>cheerup!</h1>
+					<p>
+						Cheerup! is a corner of the Internet where you'll find
+						#positivevibes only. It's a full-stack application with
+						full-CRUD functionality for registered users.
+					</p>
+					<p>
+						I built cheerup! on a Node/Express.js server with a
+						MongoDB/Mongoose database and view templating via
+						Handlebars and CSS. User-authentication implemented with
+						Passport.js.
+					</p>
+					<div class="projects-button-container">
+						<a
+							href="https://github.com/esin87/cheerup"
+							target="_blank"
+							>Repo</a
+						>
+						<a
+							href="https://esins-cheerup-app.herokuapp.com/cheerups/"
+							target="_blank"
+						>
+							Project
+						</a>
+					</div>
+				</div>
+				<div class="project-img-container">
+					<img
+						src="images/cheerup_screenshot.png"
+						alt="Screenshot of the home page of cheerup!"
+					/>
+				</div>
+			</article>
+			<article>
+				<div class="project-img-container">
+					<img
+						src="images/Project1_ScreenShot.png"
+						alt="Screenshot of Star Trek TNG Trivia Quiz home page"
+					/>
+				</div>
+				<div class="project-text-container">
+					<h1>Trivia Quiz</h1>
+					<p>
+						I blended my loves for science-fiction and coding by
+						building a Star Trek: The Next Generation Trivia Quiz.
+					</p>
+					<p>
+						This frontend-only quiz was built using HTML5, CSS, and
+						vanilla JavaScript, tracks the user's score, and
+						provides the results upon completion of the quiz.
+					</p>
+					<div class="projects-button-container">
+						<a
+							href="https://github.com/esin87/StarTrek_TNG_Trivia_Game"
+							target="_blank"
+							>Repo</a
+						>
+						<a
+							href="https://esin87.github.io/StarTrek_TNG_Trivia_Game/"
+							target="_blank"
+						>
+							Project
+						</a>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="project-text-container">
+					<h1>DG Desserts</h1>
+					<p>
+						I worked with a team of three other engineers to build
+						this open-source, ad-free Dessert Recipe CRUD
+						application in five days.
+					</p>
+					<p>
+						We used the MERN stack and deployed the API via Heroku
+						and the React UI via GitHub pages.
+					</p>
+					<p>
+						We followed an Agile/Scrum workflow, with a Scrum
+						master, daily standups and sprints.
+					</p>
+					<div class="projects-button-container">
+						<a
+							href="https://github.com/esin87/ga-seir-project3-frontend"
+							target="_blank"
+							>Repo</a
+						>
+						<a
+							href="https://esin87.github.io/ga-seir-project3-frontend"
+							target="_blank"
+						>
+							Project
+						</a>
+					</div>
+				</div>
+
+				<div class="project-img-container">
+					<img
+						src="images/DGDessertZoneHomeScreenshot.png"
+						alt="Screenshot of DG Dessert Zone homepage"
+					/>
+				</div>
+			</article>
+		</div>
+		<!-- <div class="contact" id="contact">
+			<h2>contact me!</h2>
+			<form
+				method="post"
+				id="contact-form"
+				name="contact_form"
+				action="contact-form-handler.php"
+			>
+				Your Name:
+				<input type="text" name="name" />
+				Email Address:
+				<input type="text" name="email" /> Message:
+
+				<textarea name="message"></textarea>
+				<input type="submit" value="Send!" id="submit-btn" />
+			</form>
+		</div> -->
+		<footer>Made with &hearts; by Esin Saribudak &copy; 2019</footer>
 		<script src="script.js"></script>
 	</body>
 </html>

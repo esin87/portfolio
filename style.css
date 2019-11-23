@@ -60,6 +60,7 @@ main {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	height: 100%;
 }
 
 .icon-container {
@@ -79,6 +80,7 @@ p {
 
 p a {
 	color: black;
+	padding: 0 3px;
 }
 
 p a:hover {
@@ -124,4 +126,99 @@ img.icon:hover {
 		width: 25px;
 		height: 25px;
 	}
+}
+
+.projects,
+.contact {
+	margin-top: 100px;
+}
+
+.projects img {
+	width: 100%;
+}
+
+.projects h2,
+.contact h2 {
+	font-size: 350%;
+}
+
+article {
+	width: 95%;
+	display: flex;
+	margin: 10px auto;
+	padding-top: 30px;
+	align-items: center;
+}
+
+.project-img-container {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 60%;
+}
+
+.project-text-container {
+	flex-basis: 40%;
+	background-color: #ffd500;
+	padding: 30px 45px 30px 15px;
+}
+
+.projects-button-container {
+	display: flex;
+	justify-content: center;
+}
+
+.projects-button-container a {
+	margin: 5px 10px 5px 0;
+	text-decoration: none;
+	border: 1px solid black;
+	padding: 5px 10px;
+	color: black;
+	width: 50px;
+	text-align: center;
+}
+
+.projects-button-container a:hover {
+	background-color: white;
+}
+
+form {
+	padding: 50px 75px;
+	display: flex;
+	flex-direction: column;
+}
+
+input,
+textarea {
+	margin-bottom: 25px;
+	padding: 10px;
+	font-size: 14px;
+	font-family: 'Crimson Text', serif;
+}
+
+input:focus,
+textarea:focus {
+	outline: black 1px dashed;
+}
+
+textarea {
+	resize: vertical;
+}
+
+#submit-btn {
+	width: 45px;
+	text-align: center;
+	margin: 0 auto;
+	border: 1px solid black;
+}
+
+#submit-btn:hover {
+	cursor: pointer;
+	background-color: #ffd500;
+}
+
+footer {
+	text-align: center;
+	margin: 55px 0 10px 0;
+	padding: 20px;
+	font-family: 'Dawning of a New Day', cursive;
 }
