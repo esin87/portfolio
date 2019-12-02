@@ -155,6 +155,7 @@ article {
 	display: flex;
 	margin: 10px auto;
 	padding-top: 30px;
+	padding-bottom: 20px;
 	align-items: center;
 }
 
@@ -172,7 +173,8 @@ article {
 
 .projects-button-container {
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
+	padding-bottom: 10px;
 }
 
 .projects-button-container a {
@@ -181,7 +183,7 @@ article {
 	border: 1px solid black;
 	padding: 5px 10px;
 	color: black;
-	width: 50px;
+	width: 55px;
 	text-align: center;
 }
 
