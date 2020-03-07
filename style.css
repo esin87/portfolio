@@ -10,6 +10,18 @@ body {
 	margin: 0px auto;
 	height: 100%;
 	min-height: 100%;
+	animation: fadeInAnimation ease 2s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 
 h1 {
@@ -94,22 +106,6 @@ p a {
 p a:hover {
 	background-color: white;
 }
-/* 
-img.icon:hover {
-	animation-name: spin;
-	animation-duration: 800ms;
-	animation-iteration-count: 1;
-	animation-timing-function: linear;
-	animation-delay: 100ms;
-}
-@keyframes spin {
-	from {
-		transform: rotate(0deg);
-	}
-	to {
-		transform: rotate(360deg);
-	}
-} */
 
 @media (max-width: 750px) {
 	html,
