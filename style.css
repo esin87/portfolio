@@ -10,9 +10,10 @@ body {
 	margin: 0px auto;
 	height: 100%;
 	min-height: 100%;
-	animation: fadeInAnimation ease 2s;
+	animation: fadeInAnimation ease 1.5s;
 	animation-iteration-count: 1;
 	animation-fill-mode: forwards;
+	scroll-behavior: smooth;
 }
 
 @keyframes fadeInAnimation {
@@ -67,7 +68,7 @@ h2 {
 }
 
 .icon-container img {
-	opacity: 0.7;
+	opacity: 0.6;
 }
 
 .icon-container img:hover {
@@ -100,11 +101,13 @@ p {
 
 p a {
 	color: black;
-	padding: 0 3px;
+	text-decoration: none;
+	font-weight: bolder;
+	transition: color 0.5s;
 }
 
 p a:hover {
-	background-color: white;
+	color: white;
 }
 
 @media (max-width: 750px) {
@@ -132,8 +135,19 @@ p a:hover {
 	}
 }
 
-.projects,
-.contact {
+.projects-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+}
+
+.projects-header a {
+	color: black;
+	text-decoration: none;
+	font-weight: bolder;
+}
+
+.projects {
 	margin-top: 100px;
 }
 
@@ -141,8 +155,7 @@ p a:hover {
 	width: 100%;
 }
 
-.projects h2,
-.contact h2 {
+.projects h2 {
 	font-size: 350%;
 }
 
@@ -181,45 +194,11 @@ article {
 	color: black;
 	width: 55px;
 	text-align: center;
+	transition: background-color 0.5s;
 }
 
 .projects-button-container a:hover {
 	background-color: white;
-}
-
-form {
-	padding: 50px 75px;
-	display: flex;
-	flex-direction: column;
-}
-
-input,
-textarea {
-	margin-bottom: 25px;
-	padding: 10px;
-	font-size: 14px;
-	font-family: 'Crimson Text', serif;
-}
-
-input:focus,
-textarea:focus {
-	outline: black 1px dashed;
-}
-
-textarea {
-	resize: vertical;
-}
-
-#submit-btn {
-	width: 45px;
-	text-align: center;
-	margin: 0 auto;
-	border: 1px solid black;
-}
-
-#submit-btn:hover {
-	cursor: pointer;
-	background-color: #ffd500;
 }
 
 footer {
@@ -228,3 +207,4 @@ footer {
 	padding: 20px;
 	font-family: 'Dawning of a New Day', cursive;
 }
+
