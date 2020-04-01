@@ -3,6 +3,7 @@ let iconBox = document.getElementById('icon-container');
 
 let linkedin = document.getElementById('linkedin');
 let github = document.getElementById('github');
+let generalAssembly = document.getElementById('generalAssembly');
 let instagram = document.getElementById('instagram');
 let email = document.getElementById('email');
 let resume = document.getElementById('resume');
@@ -10,6 +11,7 @@ let resume = document.getElementById('resume');
 iconBox.addEventListener('mouseover', () => {
 	linkedin.setAttribute('src', 'images/icons/001-linkedin.png');
 	github.setAttribute('src', 'images/icons/github.png');
+	generalAssembly.setAttribute('src', 'images/icons/ga-logo.png');
 	instagram.setAttribute('src', 'images/icons/002-instagram.png');
 	email.setAttribute('src', 'images/icons/003-gmail.png');
 	resume.setAttribute('src', 'images/icons/004-profile.png');
@@ -18,6 +20,8 @@ iconBox.addEventListener('mouseover', () => {
 iconBox.addEventListener('mouseout', () => {
 	linkedin.setAttribute('src', 'images/icons/045-linkedin.png');
 	github.setAttribute('src', 'images/icons/038-github.png');
+	generalAssembly.setAttribute('src', 'images/icons/ga-logo-bw.png');
+
 	instagram.setAttribute('src', 'images/icons/025-instagram.png');
 	email.setAttribute(
 		'src',
