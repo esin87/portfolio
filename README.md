@@ -23,3 +23,11 @@ To run locally, fork and clone this repository to your machine. Open the `index.
 ## Contribution Guidelines
 
 Please submit an issue with any bugs or feature requests. Feel free to fork and clone if you'd like to explore the code or personalize it to create your own portfolio!
+
+## License
+
+[The MIT License (MIT)](https://choosealicense.com/licenses/mit/)
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+Copyright (c) 2020 Esin Saribudak
