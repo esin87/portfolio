@@ -10,7 +10,7 @@ A simple portfolio page that provides a short bio, links, and projects overview.
 
 #### Mobile View (iPhone 6/7/8 Plus):
 
-<img src="images/esinsaribudak.com_iphone.png" alt="Screenshot of the mobile view of this application" style="max-height: 400px">
+<img src="images/esinsaribudak.com_iphone.png" alt="Screenshot of the mobile view of this application" width="200">
 
 ## Technologies Used
 
