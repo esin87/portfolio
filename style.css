@@ -9,6 +9,9 @@ body {
 	animation-fill-mode: forwards;
 	padding: 0;
 }
+#covid-img-container {
+	border: 1px solid lightgray;
+}
 
 @keyframes fadeInAnimation {
 	0% {
@@ -28,6 +31,11 @@ body {
 		margin: 1em auto;
 		text-align: center;
 		max-width: 95%;
+	}
+
+	.projects-button-container {
+		display: flex;
+		justify-content: center;
 	}
 
 	.projects-button-container a {
@@ -72,6 +80,10 @@ body {
 		text-decoration: none;
 		font-weight: bolder;
 		transition: color 0.5s;
+	}
+
+	#yellow-rectangle p {
+		font-size: 18px;
 	}
 
 	p a:hover {
@@ -129,7 +141,10 @@ body {
 		max-width: 20em;
 		height: auto;
 	}
-
+	.home-img-container {
+		display: flex;
+		justify-content: center;
+	}
 	main p {
 		font-size: 1.5em;
 	}
