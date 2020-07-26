@@ -210,9 +210,11 @@ body {
 	html,
 	body {
 		padding: 0;
+		min-width: 50vw;
+		width: 100%;
 		max-width: 800px;
-		padding: 0px;
-		margin: 0px auto;
+		padding: 0;
+		margin: 0 auto;
 		height: 100%;
 		min-height: 100%;
 		scroll-behavior: smooth;
@@ -235,21 +237,26 @@ body {
 
 	.home {
 		display: flex;
-		flex-direction: row;
-		align-items: stretch;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
 		height: 100%;
 		min-height: 100%;
 	}
 
 	.home img {
 		border: none;
-		height: 75%;
+		height: auto;
+		max-height: 75vh;
+		width: auto;
+		max-width: 40vw;
 	}
 
 	.home-img-container {
 		display: flex;
 		flex-direction: row;
 		align-items: center;
+		max-width: 40vw;
 	}
 
 	main {
@@ -259,6 +266,7 @@ body {
 		flex-direction: column;
 		justify-content: center;
 		height: 100%;
+		width: auto;
 	}
 
 	.icon-container {
