@@ -18,6 +18,10 @@ body {
 	background-color: white;
 }
 
+#yellow-rectangle {
+	border-radius: 2px;
+}
+
 @keyframes fadeInAnimation {
 	0% {
 		opacity: 0;
@@ -41,12 +45,12 @@ body {
 	.projects-button-container {
 		display: flex;
 		justify-content: center;
+		padding-bottom: 1em;
 	}
 
 	.projects-button-container a {
 		margin: 5px 10px 5px 0;
 		text-decoration: none;
-		border: 1px solid black;
 		padding: 5px 10px;
 		color: black;
 		width: 55px;
@@ -63,6 +67,7 @@ body {
 		padding: 0 1em;
 		margin: 1em;
 		margin-bottom: 2em;
+		border-radius: 2px;
 	}
 
 	div#top {
@@ -356,6 +361,7 @@ body {
 		flex-basis: 40%;
 		background-color: #ffd500;
 		padding: 30px 45px 30px 15px;
+		border-radius: 2px;
 	}
 
 	.projects-button-container {
