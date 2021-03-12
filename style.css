@@ -13,6 +13,11 @@ body {
 	border: 1px solid lightgray;
 }
 
+.projects-button-container a {
+	border-radius: 2px;
+	background-color: white;
+}
+
 @keyframes fadeInAnimation {
 	0% {
 		opacity: 0;
@@ -362,7 +367,6 @@ body {
 	.projects-button-container a {
 		margin: 5px 10px 5px 0;
 		text-decoration: none;
-		border: 1px solid black;
 		padding: 5px 10px;
 		color: black;
 		width: 55px;
@@ -371,7 +375,8 @@ body {
 	}
 
 	.projects-button-container a:hover {
-		background-color: white;
+		background-color: black;
+		color: white;
 	}
 
 	footer {
