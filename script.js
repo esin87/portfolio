@@ -1,12 +1,11 @@
 //social icon hijinks
-let iconBox = document.getElementById('icon-container');
-
-let linkedin = document.getElementById('linkedin');
-let github = document.getElementById('github');
-let generalAssembly = document.getElementById('generalAssembly');
-let instagram = document.getElementById('instagram');
-let email = document.getElementById('email');
-let resume = document.getElementById('resume');
+const iconBox = document.getElementById('icon-container');
+const linkedin = document.getElementById('linkedin');
+const github = document.getElementById('github');
+const generalAssembly = document.getElementById('generalAssembly');
+const instagram = document.getElementById('instagram');
+const email = document.getElementById('email');
+const resume = document.getElementById('resume');
 
 iconBox.addEventListener('mouseover', () => {
 	linkedin.setAttribute('src', 'images/icons/001-linkedin.png');
