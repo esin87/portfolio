@@ -1,0 +1,37 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const posts = (await getCollection('blog', ({ data }) => !data.draft))
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+---
+
+<BaseLayout
+  title="Blog — Esin Saribudak"
+  description="Writing on software, technology, and more."
+>
+  <h1>Blog</h1>
+
+  {posts.length === 0 ? (
+    <p>No posts yet. Check back soon.</p>
+  ) : (
+    <ul class="post-list">
+      {posts.map((post) => {
+        const date = post.data.pubDate.toLocaleDateString('en-US', {
+          year: 'numeric',
+          month: 'long',
+          day: 'numeric',
+        });
+        return (
+          <li class="post-list__item">
+            <a href={`/blog/${post.slug}`} class="post-list__link">
+              <p class="post-list__title">{post.data.title}</p>
+            </a>
+            <p class="post-list__meta">{date}</p>
+            <p class="post-list__description">{post.data.description}</p>
+          </li>
+        );
+      })}
+    </ul>
+  )}
+</BaseLayout>

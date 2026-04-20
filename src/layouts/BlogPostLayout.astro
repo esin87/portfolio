@@ -1,0 +1,67 @@
+---
+import BaseLayout from './BaseLayout.astro';
+
+interface Props {
+  title: string;
+  description: string;
+  pubDate: Date;
+  updatedDate?: Date;
+  tags?: string[];
+  image?: string;
+}
+
+const { title, description, pubDate, updatedDate, image } = Astro.props;
+
+const formattedDate = pubDate.toLocaleDateString('en-US', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+});
+
+const formattedUpdated = updatedDate?.toLocaleDateString('en-US', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+});
+
+const schemaData = {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  headline: title,
+  description,
+  datePublished: pubDate.toISOString(),
+  ...(updatedDate && { dateModified: updatedDate.toISOString() }),
+  author: {
+    '@type': 'Person',
+    name: 'Esin Saribudak',
+    url: 'https://esinsaribudak.com',
+  },
+  publisher: {
+    '@type': 'Person',
+    name: 'Esin Saribudak',
+    url: 'https://esinsaribudak.com',
+  },
+};
+---
+
+<BaseLayout {title} {description} {image} type="article" {pubDate}>
+  <script type="application/ld+json" set:html={JSON.stringify(schemaData)} slot="head" />
+
+  <a href="/blog" class="back-link">&larr; all posts</a>
+
+  <article>
+    <header class="post-header">
+      <h1 class="post-header__title">{title}</h1>
+      <p class="post-header__meta">
+        <time datetime={pubDate.toISOString()}>{formattedDate}</time>
+        {formattedUpdated && (
+          <span> &middot; updated {formattedUpdated}</span>
+        )}
+      </p>
+    </header>
+
+    <div class="post-body">
+      <slot />
+    </div>
+  </article>
+</BaseLayout>
