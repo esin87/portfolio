@@ -47,6 +47,10 @@ const schemaData = {
 <BaseLayout {title} {description} {image} type="article" {pubDate}>
   <script type="application/ld+json" set:html={JSON.stringify(schemaData)} slot="head" />
 
+  <script>
+    fetch(`https://u1sdf1bq66.execute-api.us-east-1.amazonaws.com/prod/counter?page=${encodeURIComponent(window.location.pathname)}`);
+  </script>
+
   <a href="/blog" class="back-link">&larr; all posts</a>
 
   <article>
